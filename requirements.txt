@@ -6,3 +6,5 @@ pipreqs==0.4.11
 requests==2.26.0
 urllib3==1.26.7
 yarg==0.1.9
+telethon==1.24.0
+python-dotenv
