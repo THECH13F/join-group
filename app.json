@@ -1,0 +1,40 @@
+{
+    "name": "JROUP JOIN FILE",
+    "description": "BY HARDIK KASLIWAL made in python using Telethon.",
+    "keywords": [
+        "Telethon",
+        "telegram",
+        "userbot",
+        "python",
+        "ultroid"
+    ],
+    "repository": "https://github.com/hardikhacker/joingroup1",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
+            "value": "14331738", 
+            "required": true
+        },
+        "API_HASH": {
+            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
+            "value": "21d552e818372832585c9b91d30c45b1",
+            "required": true
+        },
+        "SESSION": {
+            "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
+            "value": "",
+            "required":true
+        },
+        "GROUP_ID": {
+          "value":"",
+          "required":true
+        }
+    },
+    "formation": {
+        "ultroid": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
