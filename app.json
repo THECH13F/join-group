@@ -31,10 +31,4 @@
           "required":true
         }
     },
-    "formation": {
-        "ultroid": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
 }
