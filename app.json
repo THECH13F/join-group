@@ -1,6 +1,6 @@
 {
-  "name": "JROUP JOIN FILE",
-    "description": "BY HARDIK KASLIWAL made in python using Telethon.",
+  "name": "GROUP JOIN FILE",
+    "description": "BY CHIEF made in python using Telethon.",
     "keywords": [
         "Telethon",
         "telegram",
@@ -20,11 +20,11 @@
       "value": ""
     },
     "GROUP_ID": {
-      "description": "Create A Database In Mongodb And Get URL. Make Sure To Enter Correct URL!",
+      "description": "Create a group and make it public and then send username",
       "value": ""
     },
     "SESSION": {
-      "description": "String Session, Run string_gen.py to get String Session.",
+      "description": "take string session from https://replit.com/talk/share/Ultroid-String-Session/123343",
       "value": ""
     }
   }
