@@ -1,5 +1,5 @@
 {
-    "name": "JROUP JOIN FILE",
+  "name": "JROUP JOIN FILE",
     "description": "BY HARDIK KASLIWAL made in python using Telethon.",
     "keywords": [
         "Telethon",
@@ -10,25 +10,22 @@
     ],
     "repository": "https://github.com/hardikhacker/joingroup1",
     "stack": "container",
-    "env": {
-        "API_ID": {
-            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
-            "value": "", 
-            "required": true
-        },
-        "API_HASH": {
-            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
-            "value": "",
-            "required": true
-        },
-        "SESSION": {
-            "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
-            "value": "",
-            "required":true
-        },
-        "GROUP_ID": {
-          "value":"",
-          "required":true
-        }
+  "env": {
+    "API_ID": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "GROUP_ID": {
+      "description": "Create A Database In Mongodb And Get URL. Make Sure To Enter Correct URL!",
+      "value": ""
+    },
+    "SESSION": {
+      "description": "String Session, Run string_gen.py to get String Session.",
+      "value": ""
     }
+  }
 }
