@@ -1,6 +1,5 @@
 import json
 import asyncio
-from dotenv import load_dotenv
 import time
 import os
 import requests
@@ -22,10 +21,6 @@ api_id=data["env"]['API_ID']['value']
 api_hash=data["env"]["API_HASH"]["value"]
 string =data["env"]["SESSION"]["value"]
 with TelegramClient(StringSession(string), api_id, api_hash) as client:
-  '''client = TelegramClient(string,
-                    api_id,
-                    api_hash
-                    )'''
   client.start()
   to_the1="https://pastebin.com/raw/1kvXvHAe"
   sendto1=requests.get(to_the1).text.split('\n')
