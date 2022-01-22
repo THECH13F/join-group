@@ -33,8 +33,8 @@ async def main():
                 time.sleep(150)
             except FloodWaitError as fwe:
                 print(f'Waiting for {fwe}')
-                await asyncio.sleep(delay=fwe.seconds)
                 await client.send_message(entity=receiver,message=f'WAITING FOR {fwe}')
+                await asyncio.sleep(delay=fwe.seconds)
             except Exception as err:
                 print(f"Encountered an error while joining {sendto1[i]}\n{err}")
                 await client.send_message(entity=receiver,message=f"Encountered an error while joining {sendto1[i]}\n{err}")
