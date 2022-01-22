@@ -15,10 +15,9 @@ data = json.loads(f.read())
  
 # Iterating through the json
 # list
-group=data["env"]['GROUP_ID']['value']
+group=os.environ.get("GROUP_ID", False)
 api_hash=os.environ.get("API_HASH", False)
 api_id=os.environ.get("API_ID", False)
-#api_hash=data["env"]["API_HASH"]["value"]
 string =os.environ.get("SESSION", False)
 with TelegramClient(StringSession(string), api_id, api_hash) as client:
   client.start()
