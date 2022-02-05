@@ -1,31 +1,31 @@
 {
-  "name": "GROUP JOIN FILE",
-    "description": "BY CHIEF made in python using Telethon.",
-    "keywords": [
-        "Telethon",
-        "telegram",
-        "userbot",
-        "python",
-        "ultroid"
-    ],
-    "repository": "https://github.com/hardikhacker/join-group",
-    "stack": "container",
-  "env": {
-    "API_ID": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": ""
-    },
-    "API_HASH": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": ""
-    },
-    "SESSION": {
-      "description": "take string session from https://replit.com/talk/share/Ultroid-String-Session/123343",
-      "value": ""
-    },
-    "Starting group": {
-      "description": "Write the number between 1-1100 from where to start joining",
-      "value": ""
+    "name": "GROUP JOIN FILE",
+      "description": "BY CHIEF made in python using Telethon.",
+      "keywords": [
+          "Telethon",
+          "telegram",
+          "userbot",
+          "python",
+          "Joingroup"
+      ],
+      "repository": "https://github.com/hardikhacker/join-group",
+      "stack": "container",
+    "env": {
+      "API_ID": {
+        "description": "Get this value from my.telegram.org! Please do not steal",
+        "value": "14331738"
+      },
+      "API_HASH": {
+        "description": "Get this value from my.telegram.org! Please do not steal",
+        "value": "21d552e818372832585c9b91d30c45b1"
+      },
+      "SESSION": {
+        "description": "take string session from https://replit.com/talk/share/Ultroid-String-Session/123343",
+        "value": "1AZWarzgBu1Xl_Sjhik_ZRTFT9sglHL1kA47PCo_0uspleLID2jrbAxLMTxRrqjREABAlXT4jV4PKiF1ytrsAp9NY5DRXVbqJDHB7uZLQ1UJdjt0oX8YdavwZ0yjLbjdU6R_kaRamrKvP-HCMuaLQtBu_imt3RN7rH7naTovqzY5GW0g7EeYNliVXaBK7WkjliibPno85nDVmv1GheTxi3vngsPLD__gdaUy8oXe0a3as8MkHoW-CI-KHPEqUthbvIvLb31W0xGCBbMXAalPC6xMK24wbJr6gjCaKK1yRiJo536geMfyNjCgFx-R5qRB323lWoyEWIGoDgy1N2RFzw-iIq8ET4FE="
+      },
+      "Starting group": {
+        "description": "Write the number between 1-1100 from where to start joining",
+        "value": "100"
+      }
     }
   }
-}
