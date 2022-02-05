@@ -26,6 +26,6 @@
     "Starting group": {
       "description": "Write the number between 1-1100 from where to start joining",
       "value": "0"
-    },
+    }
   }
 }
