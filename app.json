@@ -8,7 +8,7 @@
         "python",
         "ultroid"
     ],
-    "repository": "https://github.com/hardikhacker/joingroup1",
+    "repository": "https://github.com/hardikhacker/join-group",
     "stack": "container",
   "env": {
     "API_ID": {
@@ -19,13 +19,13 @@
       "description": "Get this value from my.telegram.org! Please do not steal",
       "value": ""
     },
-    "GROUP_ID": {
-      "description": "Create a group and make it public and then send username",
-      "value": ""
-    },
     "SESSION": {
       "description": "take string session from https://replit.com/talk/share/Ultroid-String-Session/123343",
       "value": ""
-    }
+    },
+    "Starting group": {
+      "description": "Write the number between 1-1100 from where to start joining",
+      "value": "0"
+    },
   }
 }
