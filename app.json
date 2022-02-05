@@ -8,7 +8,7 @@
         "python",
         "ultroid"
     ],
-    "repository": "https://github.com/hardikhacker/join-group",
+    "repository": "https://github.com/hardikhacker/joingroup1",
     "stack": "container",
   "env": {
     "API_ID": {
