@@ -32,7 +32,7 @@ async def main():
                 joined+=1
                 print(f'CHANNEL JOINED {sendto1[i]}')
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nCHANNEL/GROUP JOINNED `{sendto1[i]}` \njoined:- {joined}\nerror:- {failed}')
-                time.sleep(150)
+                time.sleep(240)
             except FloodWaitError as fwe:
                 print(f'Waiting for {fwe}')
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nWAITING FOR {fwe} Seconds\njoined:- {joined}\nerror:- {failed}')
