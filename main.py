@@ -54,6 +54,10 @@ async def main():
                 print(f"Encountered an error while joining {sendto1[i]}\n{err}")
                 failed+=1
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}\njoined:- {joined}\nerror:- {failed}')
+        else:
+            print("ALL GROUP JOINING COMPLETE!!")
+            await client.send_message("me",message=f"**Group/CHANNEL joining by CHIEF**\nALL GROUP JOINING IS COMPLETED")
+              
 
 asyncio.run(main())
 f.close()
