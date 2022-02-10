@@ -35,7 +35,7 @@ async def main():
                 time.sleep(240)
             except FloodWaitError as fwe:
                 print(f'Waiting for {fwe}')
-                await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nWAITING FOR {fwe} Seconds\njoined:- {joined}\nerror:- {failed}')
+                await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nWAITING FOR {fwe} Seconds\njoined:- {joined}\nerror:- {failed}\ngoing={sendto1[i]}')
                 try:
                     tme = int(fwe.seconds)
                     day = tme // (24 * 3600)
@@ -53,7 +53,10 @@ async def main():
             except Exception as err:
                 print(f"Encountered an error while joining {sendto1[i]}\n{err}")
                 failed+=1
-                await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}\njoined:- {joined}\nerror:- {failed}')
+                await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={sendto1[i]}')
+            except:
+                print("!!UNKNOWN ERROR!!")
+                await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining \nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={sendto1[i]}')
         else:
             print("ALL GROUP JOINING COMPLETE!!")
             await client.send_message("me",message=f"**Group/CHANNEL joining by CHIEF**\nALL GROUP JOINING IS COMPLETED")
