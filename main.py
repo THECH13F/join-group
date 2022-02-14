@@ -15,7 +15,7 @@ data = json.loads(f.read())
  
 # Iterating through the json
 # list
-Starting_group=os.environ.get("Starting_group", False)
+#Starting_group=os.environ.get("Starting_group", False)
 api_hash=os.environ.get("API_HASH", False)
 api_id=os.environ.get("API_ID", False)
 string =os.environ.get("SESSION", False)
@@ -26,9 +26,9 @@ async def main():
         sendto1=requests.get(to_the1).text.split('\n')
         joined=tme=failed=total=0
         message = await client.send_message("me", 'Starting joining group!!')
-        for i in range(int(Starting_group),len(sendto1),1):
+        for i in range(500,len(sendto1),1):
             total+=1
-            newtotal=total+(int(Starting_group))
+            newtotal=total+500
             try:
                 await client(JoinChannelRequest(sendto1[i]))
                 joined+=1
