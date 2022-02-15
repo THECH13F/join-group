@@ -34,6 +34,7 @@ async def main():
                 joined+=1
                 print(f'CHANNEL JOINED {sendto1[i]}')
                 await client.send_message("me", f'**Group/CHANNEL joining by CHIEF**\nCHANNEL/GROUP JOINNED `{sendto1[i]}` \njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
+                print("WAITING FOR 4m")
                 time.sleep(240)
             except FloodWaitError as fwe:
                 print(f'Waiting for {fwe}')
