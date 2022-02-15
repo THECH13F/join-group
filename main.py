@@ -33,11 +33,11 @@ async def main():
                 await client(JoinChannelRequest(sendto1[i]))
                 joined+=1
                 print(f'CHANNEL JOINED {sendto1[i]}')
-                await client.send_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nCHANNEL/GROUP JOINNED `{sendto1[i]}` \njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
+                await client.send_message("me", f'**Group/CHANNEL joining by CHIEF**\nCHANNEL/GROUP JOINNED `{sendto1[i]}` \njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
                 time.sleep(240)
             except FloodWaitError as fwe:
                 print(f'Waiting for {fwe}')
-                await client.send_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nWAITING FOR {fwe} Seconds\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
+                await client.send_message("me", f'**Group/CHANNEL joining by CHIEF**\nWAITING FOR {fwe} Seconds\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
                 try:
                     tme = int(fwe.seconds)
                     day = tme // (24 * 3600)
@@ -55,10 +55,10 @@ async def main():
             except Exception as err:
                 print(f"Encountered an error while joining {sendto1[i]}\n{err}")
                 failed+=1
-                await client.send_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
+                await client.send_message("me", f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
             except:
                 print("!!UNKNOWN ERROR!!")
-                await client.send_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining \nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
+                await client.send_message("me", f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining \nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
         else:
             print("ALL GROUP JOINING COMPLETE!!")
             await client.send_message("me",message=f"**Group/CHANNEL joining by CHIEF**\nALL GROUP JOINING IS COMPLETED\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}")
