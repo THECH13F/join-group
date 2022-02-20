@@ -27,6 +27,8 @@ async def main():
         joined=tme=failed=total=0
         newtotal=int(Starting_group)
         message = await client.send_message("me", 'Starting joining group!!')
+        f0= open("joined.txt","w")
+        f1= open("error.txt","w")
         for i in range(newtotal,300,1):
             total+=1
             newtotal=total+(int(Starting_group))
@@ -34,6 +36,7 @@ async def main():
                 await client(JoinChannelRequest(sendto1[i]))
                 joined+=1
                 print(f'CHANNEL JOINED {sendto1[i]}')
+                f0.write(f'{sendto1[i]}\n')
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nCHANNEL/GROUP JOINNED `{sendto1[i]}` \njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
                 time.sleep(240)
             except FloodWaitError as fwe:
@@ -55,6 +58,7 @@ async def main():
                     await asyncio.sleep(delay=fwe.seconds)
             except Exception as err:
                 print(f"Encountered an error while joining {sendto1[i]}\n{err}")
+                f1.write(f'{sendto1[i]}\n')
                 failed+=1
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
                 await client.send_message("me",f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}')
@@ -68,6 +72,7 @@ async def main():
                 await client(JoinChannelRequest(sendto1[i]))
                 joined+=1
                 print(f'CHANNEL JOINED {sendto1[i]}')
+                f0.write(f'{sendto1[i]}\n')
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nCHANNEL/GROUP JOINNED `{sendto1[i]}` \njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
                 time.sleep(240)
             except FloodWaitError as fwe:
@@ -89,6 +94,7 @@ async def main():
                     await asyncio.sleep(delay=fwe.seconds)
             except Exception as err:
                 print(f"Encountered an error while joining {sendto1[i]}\n{err}")
+                f1.write(f'{sendto1[i]}\n')
                 failed+=1
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
                 await client.send_message("me",f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}')
@@ -102,6 +108,7 @@ async def main():
                 await client(JoinChannelRequest(sendto1[i]))
                 joined+=1
                 print(f'CHANNEL JOINED {sendto1[i]}')
+                f0.write(f'{sendto1[i]}\n')
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nCHANNEL/GROUP JOINNED `{sendto1[i]}` \njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
                 time.sleep(240)
             except FloodWaitError as fwe:
@@ -123,6 +130,7 @@ async def main():
                     await asyncio.sleep(delay=fwe.seconds)
             except Exception as err:
                 print(f"Encountered an error while joining {sendto1[i]}\n{err}")
+                f1.write(f'{sendto1[i]}\n')
                 failed+=1
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
                 await client.send_message("me",f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}')
@@ -136,6 +144,7 @@ async def main():
                 await client(JoinChannelRequest(sendto1[i]))
                 joined+=1
                 print(f'CHANNEL JOINED {sendto1[i]}')
+                f0.write(f'{sendto1[i]}\n')
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nCHANNEL/GROUP JOINNED `{sendto1[i]}` \njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
                 time.sleep(240)
             except FloodWaitError as fwe:
@@ -157,11 +166,16 @@ async def main():
                     await asyncio.sleep(delay=fwe.seconds)
             except Exception as err:
                 print(f"Encountered an error while joining {sendto1[i]}\n{err}")
+                f1.write(f'{sendto1[i]}\n')
                 failed+=1
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
                 await client.send_message("me",f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}')
             except:
                 print("!!UNKNOWN ERROR!!")
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining \nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
+        else:
+            await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\n!!COMPLETTED!! \nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
+        await client.send_file("me",'joined.txt')
+        await client.send_file("me",'error.txt')
 asyncio.run(main())
 f.close()
