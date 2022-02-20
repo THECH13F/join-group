@@ -175,6 +175,8 @@ async def main():
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining \nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
         else:
             await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\n!!COMPLETTED!! \nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
+        f0.close()
+        f1.close()
         await client.send_file("me",'joined.txt')
         await client.send_file("me",'error.txt')
 asyncio.run(main())
