@@ -61,7 +61,6 @@ async def main():
                 f1.write(f'{sendto1[i]}\n')
                 failed+=1
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
-                await client.send_message("me",f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}')
             except:
                 print("!!UNKNOWN ERROR!!")
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining \nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
@@ -97,7 +96,7 @@ async def main():
                 f1.write(f'{sendto1[i]}\n')
                 failed+=1
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
-                await client.send_message("me",f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}')
+                
             except:
                 print("!!UNKNOWN ERROR!!")
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining \nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
@@ -133,7 +132,7 @@ async def main():
                 f1.write(f'{sendto1[i]}\n')
                 failed+=1
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
-                await client.send_message("me",f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}')
+                
             except:
                 print("!!UNKNOWN ERROR!!")
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining \nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
@@ -169,7 +168,7 @@ async def main():
                 f1.write(f'{sendto1[i]}\n')
                 failed+=1
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
-                await client.send_message("me",f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining `{sendto1[i]}`\nerror:-{err}')
+                
             except:
                 print("!!UNKNOWN ERROR!!")
                 await client.edit_message("me",message, f'**Group/CHANNEL joining by CHIEF**\nEncountered an error while joining \nerror:-{err}\njoined:- {joined}\nerror:- {failed}\ngoing={newtotal}')
